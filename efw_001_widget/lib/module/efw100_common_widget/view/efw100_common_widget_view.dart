@@ -7,21 +7,6 @@ class Efw100CommonWidgetView extends StatefulWidget {
 
   Widget build(context, Efw100CommonWidgetController controller) {
     controller.view = this;
-    /*
-    Ikuti instruksi yang ada di komentar,
-    Pastikan kamu memberikan jarak tinggi sebanyak 20 di tiap widget-nya!
-    gunakan: sh20
-
-    Latihan ini akan membantu kamu untuk memahami common widget di flutter seperti:
-    1. Container (nomor 1-10)
-    2. Text (nomor 11-20)
-    3. Icon (nomor 21-30)
-    4. Image  (nomor 31-40)
-    5. CircleAvatar + Icon (nomor 41-45)
-    6. CircleAvatar + Image (nomor 46-50)
-    7. ListTile (nomor 51-60)
-    8. Card (nomor 61-70)
-    */
 
     return Scaffold(
       appBar: AppBar(
