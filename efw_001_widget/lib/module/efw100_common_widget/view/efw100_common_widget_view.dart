@@ -31,7 +31,6 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - height: 100
                 - color: Colors.blue
               --------*/
-
               /*--------
               3. Buatlah sebuah Container dengan property berikut:
                 - width: 100
