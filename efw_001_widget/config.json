@@ -1,0 +1,10 @@
+{
+    "openai_key": "",
+    "modules": [
+        "dashboard",
+        "efw100_common_widget",
+        "efw200_layout",
+        "efw300_list",
+        "efw400_grid"
+    ]
+}
