@@ -587,7 +587,7 @@ class Efw100CommonWidgetView extends StatefulWidget {
               - elevation: 12
               - margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8)
               - child: sebuah ListTile dengan property:
-                - leading: sebuah Image.asset dengan asset berupa "images/profile.png" dan berukuran 48
+                - leading: sebuah Image.asset dengan asset berupa "assets/images/image5.jpg" dan berukuran 48
                 - title: sebuah Text dengan teks "Jane Doe"
                 - subtitle: sebuah Text dengan teks "Frontend Developer"
                 - trailing: sebuah Icon dengan ikon "favorite_border"

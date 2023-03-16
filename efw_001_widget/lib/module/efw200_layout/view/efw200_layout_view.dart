@@ -1200,7 +1200,7 @@ class Efw200LayoutView extends StatefulWidget {
               49. Buatlah sebuah Stack dengan property sebagai berikut:
               - alignment: Alignment.center
               Di dalam Stack tersebut, buatlah sebuah ImageBackground widget dengan property sebagai berikut:
-              - image: AssetImage("assets/images/background.jpg")
+              - image: AssetImage("assets/images/image5.jpg")
               - fit: BoxFit.cover
               - child: Container(
                   color: Colors.black.withOpacity(0.5),
@@ -1393,7 +1393,7 @@ class Efw200LayoutView extends StatefulWidget {
                           fontWeight: FontWeight.bold,
                         )
                 - Buatlah sebuah Image widget dengan property sebagai berikut:
-                  - image: AssetImage('images/flutter_logo.png')
+                  - image: AssetImage('assets/images/image5.jpg')
                   - width: 100
                   - height: 100
               - Bungkus Row tersebut dengan sebuah Container widget dengan property sebagai berikut:
@@ -1429,7 +1429,7 @@ class Efw200LayoutView extends StatefulWidget {
                           fontWeight: FontWeight.bold,
                         )
                 - Buatlah sebuah Image widget dengan property sebagai berikut:
-                  - image: AssetImage('images/flutter_logo.png')
+                  - image: AssetImage('assets/images/image5.jpg')
                   - width: 100
                   - height: 100
                   - fit: BoxFit.cover
