@@ -1,7 +1,5 @@
-import 'package:efw_001_widget/shared/widget/paging_list/paging_list.dart';
 import 'package:flutter/material.dart';
 import 'package:efw_001_widget/core.dart';
-import '../controller/efw300_list_controller.dart';
 
 class Efw300ListView extends StatefulWidget {
   const Efw300ListView({Key? key}) : super(key: key);
@@ -532,6 +530,240 @@ class Efw300ListView extends StatefulWidget {
             --------*/
             Builder(
               builder: (context) {
+                return Container();
+              },
+            ),
+
+            /*--------
+            17. Gunakan List dibawah ini:
+            List<String> fruits = ['apple', 'banana', 'cherry', 'durian', 'elderberry'];
+
+            Instruksi:
+            > Buatlah ListView yang menampilkan setiap item pada List di atas.
+            > Setiap item harus ditampilkan di ListView
+            > Tulis kodenya di dalam method builder.
+
+            Contoh tampilan:
+            apple
+            banana
+            cherry
+            durian
+            elderberry
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
+                return Container();
+              },
+            ),
+
+            /*--------
+            18. Gunakan List<Map<String, dynamic>> dibawah ini:
+            List<Map<String, dynamic>> persons = [
+              {
+                'name': 'Alice',
+                'age': 25,
+                'gender': 'Female',
+              },
+              {
+                'name': 'Bob',
+                'age': 30,
+                'gender': 'Male',
+              },
+              {
+                'name': 'Charlie',
+                'age': 40,
+                'gender': 'Male',
+              },
+              {
+                'name': 'Diana',
+                'age': 20,
+                'gender': 'Female',
+              },
+              {
+                'name': 'Eve',
+                'age': 35,
+                'gender': 'Female',
+              },
+            ];
+
+            Instruksi:
+            > Setiap item harus ditampilkan di ListView
+            > Tulis kodenya di dalam method builder.
+
+            Contoh tampilan:
+            Alice (25) - Female
+            Bob (30) - Male
+            Charlie (40) - Male
+            Diana (20) - Female
+            Eve (35) - Female
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
+                return Container();
+              },
+            ),
+
+            /*--------
+            19. Gunakan List<Map<String, dynamic>> dibawah ini:
+            List<Map<String, dynamic>> products = [
+              {
+                'name': 'Product A',
+                'description': 'This is product A',
+                'price': 100.0,
+              },
+              {
+                'name': 'Product B',
+                'description': 'This is product B',
+                'price': 150.0,
+              },
+              {
+                'name': 'Product C',
+                'description': 'This is product C',
+                'price': 200.0,
+              },
+              {
+                'name': 'Product D',
+                'description': 'This is product D',
+                'price': 250.0,
+              },
+              {
+                'name': 'Product E',
+                'description': 'This is product E',
+                'price': 300.0,
+              },
+            ];
+
+            Instruksi:
+            > Gunakan ListView.builder untuk menampilkan setiap item pada List products di atas.
+            > Setiap item harus ditampilkan pada ListView
+            > Tulis kodenya di dalam method builder.
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
+                return Container();
+              },
+            ),
+
+            /*--------
+            20. Gunakan List<Map<String, dynamic>> dibawah ini:
+            List<Map<String, dynamic>> products = [
+              {
+                'name': 'Product A',
+                'description': 'This is product A',
+                'price': 100.0,
+              },
+              {
+                'name': 'Product B',
+                'description': 'This is product B',
+                'price': 150.0,
+              },
+              {
+                'name': 'Product C',
+                'description': 'This is product C',
+                'price': 200.0,
+              },
+              {
+                'name': 'Product D',
+                'description': 'This is product D',
+                'price': 250.0,
+              },
+              {
+                'name': 'Product E',
+                'description': 'This is product E',
+                'price': 300.0,
+              },
+            ];
+
+            Instruksi:
+            > Gunakan ListView.builder untuk menampilkan setiap item pada List products di atas.
+            > Setiap item harus ditampilkan pada ListView
+            > Tulis kodenya di dalam method builder.
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
+                return Container();
+              },
+            ),
+
+            /*--------
+            21. Gunakan List<Map<String, dynamic>> dibawah ini:
+            List<Map<String, dynamic>> events = [
+              {
+                'title': 'Event A',
+                'description': 'This is event A',
+                'date': DateTime.parse('2023-03-28'),
+              },
+              {
+                'title': 'Event B',
+                'description': 'This is event B',
+                'date': DateTime.parse('2023-04-01'),
+              },
+              {
+                'title': 'Event C',
+                'description': 'This is event C',
+                'date': DateTime.parse('2023-04-15'),
+              },
+            ];
+
+            Instruksi:
+            > Gunakan ListView.builder untuk menampilkan setiap item pada List events di atas.
+            > Ubah format tanggal menjadi 'd MMM y' (contoh: 28 Mar 2023).
+            > Tulis kodenya di dalam method builder.
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
+                return Container();
+              },
+            ),
+
+            /*--------
+            22. Gunakan List<Map<String, dynamic>> dibawah ini:
+            List<Map<String, dynamic>> peoples = [
+              {
+                'name': 'John',
+                'age': 20,
+                'gender': 'male',
+              },
+              {
+                'name': 'Sarah',
+                'age': 25,
+                'gender': 'female',
+              },
+              {
+                'name': 'Peter',
+                'age': 30,
+                'gender': 'male',
+              },
+              {
+                'name': 'Mary',
+                'age': 35,
+                'gender': 'female',
+              },
+              {
+                'name': 'David',
+                'age': 40,
+                'gender': 'male',
+              },
+            ];
+
+            Instruksi:
+            > Widget: ListView.builder
+            > Tulis kodenya di dalam method builder.
+            --------*/
+
+            Builder(
+              builder: (context) {
+                // Silakan isi kode di sini
                 return Container();
               },
             ),

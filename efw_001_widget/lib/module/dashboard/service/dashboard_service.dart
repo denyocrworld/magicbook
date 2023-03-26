@@ -15,6 +15,10 @@ class DashboardService {
       "page": const Efw300ListView(),
     },
     {
+      "label": "EFW301 - ListView",
+      "page": const Efw301ListView(),
+    },
+    {
       "label": "EFW400 - GridView",
       "page": const Efw400GridView(),
     }
