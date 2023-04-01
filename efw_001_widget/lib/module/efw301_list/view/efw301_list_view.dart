@@ -16,11 +16,12 @@ class Efw301ListView extends StatefulWidget {
         padding: const EdgeInsets.all(10.0),
         child: PagingListView(
           children: [
+            //Buatlah List<Map<String,dynamic>> eventList dengan 10 data?
             /*--------
-            1. Gunakan ListView.builder, tampilkan list ini,
-            dengan ketentuan:
-            - Jika gender-nya 'male' tampilkan Icons.male
-            - Jika gender-nya 'female' tampilkan Icons.female
+            1. Tampilkan List dibawah ini dengan ListView.builder!
+            - if gender == male , name == Colors.green
+            - if gender == female , name == Colors.pink
+
             List<Map<String, dynamic>> peoples = [
               {
                 'name': 'John',

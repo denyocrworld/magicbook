@@ -2,6 +2,13 @@
     "openai_key": "",
     "modules": [
         "dashboard",
+        "efd1100_variable",
+        "efd1200_datetime",
+        "efd1300_string",
+        "efd1400_number",
+        "efd1500_if_statement",
+        "efd1600_list_and_map",
+        "efd1700_regex",
         "efw100_common_widget",
         "efw200_layout",
         "efw300_list",
