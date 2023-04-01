@@ -316,7 +316,18 @@ class Efd1100VariableView extends StatefulWidget {
   bool exercise33() {
     String input = "1234";
     // Tuliskan kode untuk memverifikasi apakah input adalah angka
-    bool? output;
+
+    String numbers = "1234567890";
+    var items = input.split("");
+    var isNumeric = true;
+
+    for (var item in items) {
+      if (!numbers.contains(item)) {
+        isNumeric = false;
+      }
+    }
+
+    bool? output = isNumeric;
 
     return output == true;
   }
@@ -325,9 +336,8 @@ class Efd1100VariableView extends StatefulWidget {
     String input =
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
-    String? output;
-
-    return output == "Dart is a client-optimized programming language...";
+    String? output = input.substring(0, 50);
+    return output.length == 50;
   }
 
   bool exercise35() {

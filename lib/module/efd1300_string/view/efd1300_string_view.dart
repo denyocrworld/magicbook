@@ -13,7 +13,7 @@ class Efd1300StringView extends StatefulWidget {
     //Seharusnya condition-nya adalah ketika:
     //productName mengandung kata2 yang ada pada variabel query!
     //[Tips] Gunakan .contains
-    if (productName != productName) {
+    if (productName.contains(query)) {
       isValid = true;
     }
     return isValid;
@@ -28,7 +28,7 @@ class Efd1300StringView extends StatefulWidget {
     //Seharusnya condition-nya adalah ketika:
     //productName kosong
     //[Tips] Gunakan .isEmpty
-    if (productName != productName) {
+    if (productName.isEmpty) {
       isEmpty = true;
     }
     return isEmpty;
@@ -43,7 +43,7 @@ class Efd1300StringView extends StatefulWidget {
     //Seharusnya condition-nya adalah ketika:
     //productName minimal memilki 2 karakter atau lebih
     //[Tips] Gunakan .length, dan >= 2
-    if (productName == "") {
+    if (productName.length >= 2) {
       isValid = true;
     }
     return isValid;
@@ -51,10 +51,12 @@ class Efd1300StringView extends StatefulWidget {
 
   bool? exercise4() {
     bool isValid = false;
-    int number = 23;
+    int number = 23; //0023
+
     String code = "";
     //Ubah angka 23 menjadi String "0023"
     //Gunakan .toString().padLeft(4,"0")!
+    code = number.toString().padLeft(4, "0");
     return code == "0023";
   }
 
@@ -63,7 +65,7 @@ class Efd1300StringView extends StatefulWidget {
     int number = 27;
     String code = "";
     //Ubah angka 27 menjadi String "00027"
-    //Gunakan .toString().padRight(5,"0")!
+    //Gunakan .toString().padLeft(5,"0")!
     return code == "00027";
   }
 
