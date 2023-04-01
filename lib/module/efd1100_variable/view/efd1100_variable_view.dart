@@ -48,9 +48,8 @@ class Efd1100VariableView extends StatefulWidget {
     //Kode dibawah akan error jika di jalankan,
     //Perbaiki dengan meng-gunakan .tryParse("300aa")??0
     //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
-    /*
-          total = double.parse("300aa");
-          */
+
+    total = double.parse("300");
     return total != null;
   }
 
