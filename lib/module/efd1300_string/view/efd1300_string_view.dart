@@ -66,6 +66,7 @@ class Efd1300StringView extends StatefulWidget {
     String code = "";
     //Ubah angka 27 menjadi String "00027"
     //Gunakan .toString().padLeft(5,"0")!
+    code = number.toString().padLeft(5, "0");
     return code == "00027";
   }
 
@@ -295,15 +296,17 @@ class Efd1300StringView extends StatefulWidget {
   bool exercise33() {
     String input = "USD 12,345.67";
     // Tuliskan kode untuk mengkonversi input menjadi double
-    double? output;
-
+    var numericInput = input.replaceAll(RegExp(r'[^0-9.]'), '');
+    double? output = double.parse(numericInput);
     return output == 12345.67;
   }
 
   bool exercise34() {
     String input = "€12.345,67";
     // Tuliskan kode untuk mengkonversi input menjadi double
-    double? output;
+    var numericInput = input.replaceAll(RegExp(r'[^0-9,]'), '');
+    numericInput = numericInput.replaceAll(",", ".");
+    double? output = double.parse(numericInput);
 
     return output == 12345.67;
   }
@@ -311,7 +314,8 @@ class Efd1300StringView extends StatefulWidget {
   bool exercise35() {
     String input = "¥12,345.67";
     // Tuliskan kode untuk mengkonversi input menjadi double
-    double? output;
+    var numericInput = input.replaceAll(RegExp(r'[^0-9.]'), '');
+    double? output = double.parse(numericInput);
 
     return output == 12345.67;
   }

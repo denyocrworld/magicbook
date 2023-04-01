@@ -9,7 +9,12 @@ class Efd1500IfStatementView extends StatefulWidget {
     // Tuliskan kode untuk menentukan apakah number adalah bilangan genap atau ganjil
     // Jika angka number adalah genap, maka assign variabel result dengan string "Genap".
     // Jika angka number adalah ganjil, maka assign variabel result dengan string "Ganjil".
-    String? result;
+    String? result = number % 2 == 0 ? "Genap" : "Ganjil";
+    // if (number % 2 == 0) {
+    //   result = "Genap";
+    // } else {
+    //   result = "Ganjil";
+    // }
 
     return result == "Ganjil";
   }
@@ -20,8 +25,7 @@ class Efd1500IfStatementView extends StatefulWidget {
     // Jika num adalah bilangan positif, maka assign variabel result dengan string "Positif".
     // Jika num adalah bilangan negatif, maka assign variabel result dengan string "Negatif".
     // Jika num adalah nol, maka assign variabel result dengan string "Nol".
-    String? result;
-
+    String? result = num >= 0 ? "Positif" : "Negatif";
     return result == "Positif";
   }
 
@@ -294,7 +298,11 @@ class Efd1500IfStatementView extends StatefulWidget {
     int num1 = 5;
     int num2 = 10;
     // Tuliskan kode untuk menentukan apakah num1 lebih besar dari 0 dan num2 lebih kecil dari 5
-    bool? result;
+    bool? result = num1 > 0 && num2 < 5;
+
+    // if (num1 > 0 && num2 < 5) {
+    //   result = true;
+    // }
 
     return result == false;
   }
@@ -303,7 +311,7 @@ class Efd1500IfStatementView extends StatefulWidget {
     int num1 = 5;
     int num2 = 10;
     // Tuliskan kode untuk menentukan apakah num1 lebih kecil dari 0 atau num2 lebih besar dari 5
-    bool? result;
+    bool? result = num1 < 0 || num2 > 5;
 
     return result == true;
   }

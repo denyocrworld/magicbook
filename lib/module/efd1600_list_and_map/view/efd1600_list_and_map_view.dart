@@ -8,27 +8,37 @@ class Efd1600ListAndMapView extends StatefulWidget {
     List<double> sales = [12.5, 20.0, 15.0, 10.0, 5.0];
     double? total;
     //Tuliskan kode untuk menghitung total penjualan dan simpan dalam variabel `total`
+    for (var sale in sales) {
+      total = (total ?? 0) + sale;
+    }
     return total == 62.5;
   }
 
   bool exercise2() {
     List<double> sales = [12.5, 20.0, 15.0, 10.0, 5.0];
     //Tulis kode untuk menghitung average penjualan dan tampung ke variable di bawah ini
-    double? average = 0;
+    double total = 0;
+    for (var sale in sales) {
+      total += sale;
+    }
+
+    int itemCount = sales.length;
+    double? average = total / itemCount;
     return average == 12.5;
   }
 
   bool exercise3() {
     List<int> numbers = [1, 2, 3, 4, 5];
     //Tulis kode untuk menghitung nilai tertinggi dari list numbers dan tampung ke variable di bawah ini
-    int? highest = 0;
+    // numbers.sort();
+    int? highest = numbers.last;
     return highest == 5;
   }
 
   bool exercise4() {
     List<int> numbers = [1, 2, 3, 4, 5];
     //Tulis kode untuk menghitung nilai terendah dari list numbers dan tampung ke variable di bawah ini
-    int? lowest = 0;
+    int? lowest = numbers.first;
     return lowest == 1;
   }
 
@@ -36,6 +46,11 @@ class Efd1600ListAndMapView extends StatefulWidget {
     List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     //Tulis kode untuk menghitung jumlah angka genap dan tampung ke variable di bawah ini
     int? even = 0;
+    for (var number in numbers) {
+      if (number % 2 == 0) {
+        even = (even ?? 0) + number;
+      }
+    }
 
     return even == 30;
   }
@@ -949,8 +964,15 @@ class Efd1600ListAndMapView extends StatefulWidget {
 
     // Tuliskan kode untuk menentukan rata-rata gaji dari semua employee dan tampung ke variable di bawah ini
     double? averageSalary;
+    double total = 0;
+    int itemCount = employees.length;
+    for (var employee in employees) {
+      total += employee["salary"];
+    }
 
-    return averageSalary == 7500.0;
+    averageSalary = total / itemCount;
+
+    return averageSalary == 7750.0;
   }
 
   bool exercise61() {
@@ -1346,8 +1368,7 @@ class Efd1600ListAndMapView extends StatefulWidget {
     };
 
     // Tuliskan kode untuk mengakses wattage dari produk dan tampung ke variable di bawah ini
-    int? wattage;
-
+    int? wattage = product["details"]["wattage"];
     return wattage == product["details"]["wattage"];
   }
 
@@ -1366,7 +1387,7 @@ class Efd1600ListAndMapView extends StatefulWidget {
     };
 
     // Tuliskan kode untuk mengakses email dari customer dan tampung ke variable di bawah ini
-    String? email;
+    String? email = customer["email"];
 
     return email == customer["email"];
   }
@@ -1386,7 +1407,7 @@ class Efd1600ListAndMapView extends StatefulWidget {
     };
 
     // Tuliskan kode untuk mengakses jumlah halaman dari buku dan tampung ke variable di bawah ini
-    int? pages;
+    int? pages = book["details"]["pages"];
 
     return pages == book["details"]["pages"];
   }
