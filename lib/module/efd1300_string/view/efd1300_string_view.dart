@@ -63,7 +63,7 @@ class Efd1300StringView extends StatefulWidget {
     int number = 27;
     String code = "";
     //Ubah angka 27 menjadi String "00027"
-    //Gunakan .toString().padRight(5,"0")!
+    //Gunakan .toString().padLeft(5,"0")!
     return code == "00027";
   }
 
