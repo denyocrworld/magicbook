@@ -283,15 +283,24 @@ class Efd1100VariableView extends StatefulWidget {
   bool exercise30() {
     double input = 123.45;
     // Tuliskan kode untuk memverifikasi apakah input memiliki 3 digit setelah koma
-    bool? output;
-
+    var arr = input.toString().split(".");
+    //0 = 123
+    //1 = 45
+    bool? output = arr[1].toString().length == 3;
     return output == false;
   }
 
+  //kakak => kakak
+  //budi  => idub     x
+  //ana   => ana
+  //hannah => hannah
+  //ane   => ena    x
   bool exercise31() {
     String input = "Hello World";
     // Tuliskan kode untuk memverifikasi apakah input adalah palindrome
-    bool? output;
+    List arr = input.split("");
+    String reversedInput = arr.reversed.toList().join("");
+    bool? output = input == reversedInput;
 
     return output == false;
   }
@@ -299,7 +308,7 @@ class Efd1100VariableView extends StatefulWidget {
   bool exercise32() {
     String input = "Dart is Awesome";
     // Tuliskan kode untuk mengubah input menjadi huruf kecil semua dan memisahkan kata dengan spasi menjadi underscore
-    String? output;
+    String? output = input.toLowerCase().replaceAll(" ", "_");
 
     return output == "dart_is_awesome";
   }
