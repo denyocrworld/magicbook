@@ -6,7 +6,7 @@ class Efd1100VariableView extends StatefulWidget {
 
   bool? exercise1() {
     //Ubah tipe data variable dibawah ini menjadi String
-    int price = 100;
+    String price = "100";
     return price is String;
   }
 
@@ -16,6 +16,7 @@ class Efd1100VariableView extends StatefulWidget {
     //Ubahlah variable text di atas menjadi double,
     //dan isilah varibel price dengan hasil konversinya
     //di bagian bawah
+    price = double.parse(text);
     return price == 100.24;
   }
 
@@ -26,10 +27,8 @@ class Efd1100VariableView extends StatefulWidget {
     //[TIPS] Hilangkan semua String selain angka 0-9 dan titik.
     //Gunakan Regex seperti ini: .replaceAll(RegExp(r'[^\d.]'), '')
 
-    /*
-          String text = "300.24a";
-          price = double.parse(text);
-          */
+    String text = "300.24";
+    price = double.parse(text);
 
     return price == 300.24;
   }
@@ -37,9 +36,9 @@ class Efd1100VariableView extends StatefulWidget {
   bool exercise4() {
     int input = 12;
     // Tuliskan kode untuk memverifikasi apakah input adalah bilangan ganjil
-    bool? output;
+    bool? output = input % 2 != 0;
 
-    return output == true;
+    return output == false;
   }
 
   bool? exercise5() {

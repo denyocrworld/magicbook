@@ -7,16 +7,16 @@ class DashboardService {
       "page": const Efd1100VariableView(),
     },
     {
-      "label": "EFD1200 - DateTime",
-      "page": const Efd1200DatetimeView(),
-    },
-    {
       "label": "EFD1300 - String",
       "page": const Efd1300StringView(),
     },
     {
       "label": "EFD1400 - Number",
       "page": const Efd1400NumberView(),
+    },
+    {
+      "label": "EFD1200 - DateTime",
+      "page": const Efd1200DatetimeView(),
     },
     {
       "label": "EFD1500 - IF Statement",
