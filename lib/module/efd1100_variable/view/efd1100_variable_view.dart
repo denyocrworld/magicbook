@@ -319,7 +319,7 @@ class Efd1100VariableView extends StatefulWidget {
     // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
     String? output;
 
-    return output == "Dart is a client-optimized programming language...";
+    return output?.length == 50;
   }
 
   bool exercise35() {
