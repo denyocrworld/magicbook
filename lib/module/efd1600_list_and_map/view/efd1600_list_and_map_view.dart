@@ -950,7 +950,7 @@ class Efd1600ListAndMapView extends StatefulWidget {
     // Tuliskan kode untuk menentukan rata-rata gaji dari semua employee dan tampung ke variable di bawah ini
     double? averageSalary;
 
-    return averageSalary == 7500.0;
+    return averageSalary == 7750.0;
   }
 
   bool exercise61() {
