@@ -34,7 +34,21 @@ class Efw300ListView extends StatefulWidget {
             --------*/
             Builder(
               builder: (context) {
-                return Container();
+                return ListView.builder(
+                  itemCount: 5,
+                  physics: const ScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    return ListTile(
+                      leading: const Icon(Icons.person),
+                      title: Text('Person ${index + 1}'),
+                      subtitle: Text('This is person ${index + 1}'),
+                      trailing: const Icon(Icons.arrow_forward_ios),
+                      onTap: () {
+                        print('Person ${index + 1} was tapped');
+                      },
+                    );
+                  },
+                );
               },
             ),
 
@@ -54,7 +68,19 @@ class Efw300ListView extends StatefulWidget {
 
             Builder(
               builder: (context) {
-                return Container();
+                return ListView.separated(
+                  itemCount: 10,
+                  physics: const ScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    return ListTile(
+                      leading: const Icon(Icons.book),
+                      title: Text('Book ${index + 1}'),
+                      subtitle: Text('Author ${index + 1}'),
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) =>
+                      const Divider(),
+                );
               },
             ),
             /*--------
@@ -763,8 +789,118 @@ class Efw300ListView extends StatefulWidget {
 
             Builder(
               builder: (context) {
+                List<Map<String, dynamic>> peoples = [
+                  {
+                    'name': 'John',
+                    'age': 20,
+                    'gender': 'male',
+                  },
+                  {
+                    'name': 'Sarah',
+                    'age': 25,
+                    'gender': 'female',
+                  },
+                  {
+                    'name': 'Peter',
+                    'age': 30,
+                    'gender': 'male',
+                  },
+                  {
+                    'name': 'Mary',
+                    'age': 35,
+                    'gender': 'female',
+                  },
+                  {
+                    'name': 'David',
+                    'age': 40,
+                    'gender': 'male',
+                  },
+                ];
                 // Silakan isi kode di sini
-                return Container();
+                return ListView.builder(
+                  itemCount: peoples.length,
+                  physics: const ScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    var item = peoples[index];
+
+                    return Container(
+                      width: 160,
+                      height: 160,
+                      margin: const EdgeInsets.only(right: 10.0),
+                      decoration: BoxDecoration(
+                        image: const DecorationImage(
+                          image: NetworkImage(
+                            "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(16.0),
+                        ),
+                        color: Colors.blue[400],
+                      ),
+                      child: Stack(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(6.0),
+                            margin: const EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              color: Colors.green[800],
+                              borderRadius: const BorderRadius.all(
+                                Radius.circular(
+                                  12.0,
+                                ),
+                              ),
+                            ),
+                            child: const Text(
+                              "PROMO",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 8.0,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            child: Container(
+                              padding: const EdgeInsets.all(12.0),
+                              decoration: const BoxDecoration(
+                                color: Colors.black38,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(16.0),
+                                  bottomRight: Radius.circular(16.0),
+                                ),
+                              ),
+                              child: const Text(
+                                "Avocado and Eeg Toast",
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 11.0,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                    return Card(
+                      child: ListTile(
+                        leading: Text(
+                          "${item["age"]}",
+                          style: const TextStyle(
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        title: Text(item["name"]),
+                        subtitle: Text(item["gender"]),
+                      ),
+                    );
+                  },
+                );
               },
             ),
           ],

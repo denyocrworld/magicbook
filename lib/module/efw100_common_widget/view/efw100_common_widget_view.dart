@@ -17,26 +17,47 @@ class Efw100CommonWidgetView extends StatefulWidget {
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-            children: const [
+            children: [
               /*--------
               1. Buatlah sebuah Container dengan property berikut:
                 - width: 200
                 - height: 200
                 - color: Colors.red
               --------*/
-
+              Container(
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                ),
+              ),
               /*--------
               2. Buatlah sebuah Container dengan property berikut:
                 - width: 150
                 - height: 100
                 - color: Colors.blue
               --------*/
+              Container(
+                height: 100,
+                width: 150,
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
+
               /*--------
               3. Buatlah sebuah Container dengan property berikut:
                 - width: 100
                 - height: 50
                 - color: Colors.green
               --------*/
+              Container(
+                height: 50,
+                width: 100,
+                decoration: const BoxDecoration(
+                  color: Colors.green,
+                ),
+              ),
 
               /*--------
               4. Buatlah sebuah Container dengan property berikut:
@@ -44,6 +65,13 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - height: 100
                 - color: Colors.yellow
               --------*/
+              Container(
+                height: 100,
+                width: 300,
+                decoration: const BoxDecoration(
+                  color: Colors.yellow,
+                ),
+              ),
 
               /*--------
               5. Buatlah sebuah Container dengan property berikut:
@@ -51,6 +79,13 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - height: 150
                 - color: Colors.purple
               --------*/
+              Container(
+                height: 150,
+                width: 50,
+                decoration: const BoxDecoration(
+                  color: Colors.purple,
+                ),
+              ),
 
               /*--------
               6. Buatlah sebuah Container dengan property berikut:
@@ -58,6 +93,13 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - height: 100%
                 - color: Colors.orange
               --------*/
+              Container(
+                height: 100,
+                width: 100,
+                decoration: const BoxDecoration(
+                  color: Colors.orange,
+                ),
+              ),
 
               /*--------
               7. Buatlah sebuah Container dengan property berikut:
@@ -66,6 +108,14 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - color: Colors.pink
                 - padding: EdgeInsets.all(16)
               --------*/
+              Container(
+                padding: const EdgeInsets.all(16),
+                height: 80,
+                width: 120,
+                decoration: const BoxDecoration(
+                  color: Colors.pink,
+                ),
+              ),
 
               /*--------
               8. Buatlah sebuah Container dengan property berikut:
@@ -74,6 +124,14 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - color: Colors.grey
                 - margin: EdgeInsets.symmetric(vertical: 16, horizontal: 8)
               --------*/
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
+                  color: Colors.grey,
+                ),
+              ),
 
               /*--------
               9. Buatlah sebuah Container dengan property berikut:
@@ -85,6 +143,18 @@ class Efw100CommonWidgetView extends StatefulWidget {
                 - size: 32
                 - color: Colors.red
               --------*/
+              Container(
+                height: 100,
+                width: 100,
+                decoration: const BoxDecoration(
+                  color: Colors.greenAccent,
+                ),
+                child: const Icon(
+                  Icons.star,
+                  size: 32.0,
+                  color: Colors.red,
+                ),
+              ),
 
               /*--------
               10. Buatlah sebuah Container dengan property berikut:
@@ -105,6 +175,26 @@ class Efw100CommonWidgetView extends StatefulWidget {
                       ),
                     )
               --------*/
+              Container(
+                height: 150,
+                width: 150,
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(75.0),
+                  ),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Hello World!",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
 
               /*--------
               11. Buatlah sebuah Text dengan property berikut:
@@ -115,6 +205,14 @@ class Efw100CommonWidgetView extends StatefulWidget {
                       color: Colors.blue,
                     )
               --------*/
+              const Text(
+                "Flutter is awesome",
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
 
               /*--------
               12. Buatlah sebuah Text dengan property berikut:
@@ -122,6 +220,11 @@ class Efw100CommonWidgetView extends StatefulWidget {
                   - textAlign: TextAlign.center
                   - style: TextStyle(fontSize: 18, fontStyle: FontStyle.italic)
               --------*/
+              const Text(
+                "Welcome to Flutter",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic),
+              ),
 
               /*--------
               13. Buatlah sebuah Text dengan property berikut:
@@ -129,6 +232,12 @@ class Efw100CommonWidgetView extends StatefulWidget {
                   - maxLines: 2
                   - overflow: TextOverflow.ellipsis
               --------*/
+              const Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                maxLines: 2,
+                style:
+                    TextStyle(fontSize: 12.0, overflow: TextOverflow.ellipsis),
+              ),
 
               /*--------
               14. Buatlah sebuah Text dengan property berikut:
@@ -136,6 +245,13 @@ class Efw100CommonWidgetView extends StatefulWidget {
                   - style: TextStyle(fontSize: 20)
                   - textScaleFactor: 1.5
               --------*/
+              const Text(
+                "Hello World!",
+                textScaleFactor: 1.5,
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+              ),
 
               /*--------
               15. Buatlah sebuah Text dengan property berikut:
@@ -144,6 +260,12 @@ class Efw100CommonWidgetView extends StatefulWidget {
                   - softWrap: true
                   - overflow: TextOverflow.visible
               --------*/
+              const Text(
+                "This is a long text that should be wrapped  in multiple lines when it exceeds the width of the container",
+                softWrap: true,
+                style:
+                    TextStyle(fontSize: 16.0, overflow: TextOverflow.visible),
+              ),
 
               /*--------
               16. Buatlah sebuah Text dengan property berikut:

@@ -17,7 +17,7 @@ class Efw200LayoutView extends StatefulWidget {
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-            children: const [
+            children: [
               /*--------
               1. Buatlah sebuah Row dengan 3 buah Container, dimana setiap container memiliki lebar dan tinggi yang sama, dan memiliki warna yang berbeda-beda dengan property sebagai berikut:
               - Container 1:
@@ -33,6 +33,31 @@ class Efw200LayoutView extends StatefulWidget {
                 - height: 100
                 - color: Colors.blue
               --------*/
+              Row(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                      color: Colors.red,
+                    ),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                      color: Colors.green,
+                    ),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  ),
+                ],
+              ),
 
               /*--------
               2. Buatlah sebuah Row dengan 2 buah ElevatedButton, dimana setiap tombol memiliki teks yang berbeda-beda dan ukuran yang berbeda-beda dengan property sebagai berikut:
@@ -43,6 +68,30 @@ class Efw200LayoutView extends StatefulWidget {
                 - child: Text("Button 2", style: TextStyle(fontSize: 20.0))
                 - style: ElevatedButton.styleFrom(backgroundColor: Colors.green)
               --------*/
+              Row(
+                children: [
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Button 1",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.orange,
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Save",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                ],
+              ),
 
               /*--------
               3. Buatlah sebuah Row dengan 4 buah Text widget, dimana setiap widget memiliki ukuran yang berbeda-beda dan warna yang sama dengan property sebagai berikut:
@@ -59,6 +108,38 @@ class Efw200LayoutView extends StatefulWidget {
                 - text: "Hello"
                 - style: TextStyle(fontSize: 28.0, color: Colors.red)
               --------*/
+              Row(
+                children: const [
+                  Text(
+                    "Hello",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Text(
+                    "Hello",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Text(
+                    "Hello",
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Text(
+                    "text",
+                    style: TextStyle(
+                      fontSize: 28.0,
+                      color: Colors.red,
+                    ),
+                  ),
+                ],
+              ),
 
               /*--------
               4. Buatlah sebuah Row dengan 2 buah Icon, dimana setiap icon memiliki ukuran yang berbeda-beda dan warna yang berbeda-beda dengan property sebagai berikut:
@@ -71,6 +152,20 @@ class Efw200LayoutView extends StatefulWidget {
                 - color: Colors.green
                 - size: 24.0
               --------*/
+              Row(
+                children: const [
+                  Icon(
+                    Icons.favorite,
+                    size: 32.0,
+                    color: Colors.red,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 24.0,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
 
               /*--------
               5. Buatlah sebuah Row dengan 3 buah Image, dimana setiap gambar memiliki lebar yang sama dan berasal dari sumber yang berbeda-beda dengan property sebagai berikut:
@@ -84,6 +179,28 @@ class Efw200LayoutView extends StatefulWidget {
                 - image: NetworkImage("https://www.example.com/image3.jpg")
                 - width: 100.0
               --------*/
+              Row(
+                children: [
+                  Image.network(
+                    "https://images.unsplash.com/photo-1484517586036-ed3db9e3749e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+                    width: 100.0,
+                    height: 200.0,
+                    fit: BoxFit.cover,
+                  ),
+                  Image.network(
+                    "https://images.unsplash.com/photo-1484517586036-ed3db9e3749e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+                    width: 100.0,
+                    height: 200.0,
+                    fit: BoxFit.cover,
+                  ),
+                  Image.network(
+                    "https://images.unsplash.com/photo-1484517586036-ed3db9e3749e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+                    width: 100.0,
+                    height: 200.0,
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ),
 
               /*--------
               6. Buatlah sebuah Container dengan property sebagai berikut:
@@ -102,6 +219,13 @@ class Efw200LayoutView extends StatefulWidget {
               - Atur crossAxis menjadi CrossAxisAlignment.center
               - Atur mainAxis menjadi MainAxisAlignment.center
               --------*/
+              Container(
+                height: 100,
+                width: 100,
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
 
               /*--------
               7. Buatlah sebuah Container dengan property sebagai berikut:
