@@ -6,6 +6,8 @@ it means you have to rename it to something more unique.
 export 'package:magicbook/module/dashboard/controller/dashboard_controller.dart';
 export 'package:magicbook/module/dashboard/service/dashboard_service.dart';
 export 'package:magicbook/module/dashboard/view/dashboard_view.dart';
+export 'package:magicbook/module/efb100_null_safety/controller/efb100_null_safety_controller.dart';
+export 'package:magicbook/module/efb100_null_safety/view/efb100_null_safety_view.dart';
 export 'package:magicbook/module/efd1100_variable/controller/efd1100_variable_controller.dart';
 export 'package:magicbook/module/efd1100_variable/view/efd1100_variable_view.dart';
 export 'package:magicbook/module/efd1200_datetime/controller/efd1200_datetime_controller.dart';

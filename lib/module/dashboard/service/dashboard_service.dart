@@ -49,6 +49,10 @@ class DashboardService {
     {
       "label": "EFW400 - GridView",
       "page": const Efw400GridView(),
+    },
+    {
+      "label": "EFB100 - Null Safety",
+      "page": const Efb100NullSafetyView(),
     }
   ];
 }
