@@ -4,7 +4,6 @@ import 'package:magicbook/core.dart';
 class Efb100NullSafetyView extends StatefulWidget {
   const Efb100NullSafetyView({Key? key}) : super(key: key);
 
-// Exercise 0
   void exercise001() {
     // Berapa nilai subtotal, discount, tax dan total
     // Jawablah dengan format ini: (contoh)
