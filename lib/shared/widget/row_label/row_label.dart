@@ -41,6 +41,7 @@ Widget rowAction(Function func) {
   int endIndex = text.lastIndexOf("'");
   String functionName = text.substring(startIndex, endIndex);
   bool isDone = func() ?? false;
+  String fName = functionName[0].toUpperCase() + functionName.substring(1);
   return Container(
     width: MediaQuery.of(Get.currentContext).size.width,
     height: 42,
@@ -53,6 +54,8 @@ Widget rowAction(Function func) {
       ),
       onPressed: () {
         print("~..~~~~~~~~~..~");
+        print(":: $fName");
+        print("~...~~~~~~~...~");
         func();
         print("~.~~~~~~~~~~~.~");
       },
@@ -65,7 +68,7 @@ Widget rowAction(Function func) {
           const SizedBox(
             width: 6.0,
           ),
-          Text(functionName[0].toUpperCase() + functionName.substring(1)),
+          Text(fName),
         ],
       ),
     ),
