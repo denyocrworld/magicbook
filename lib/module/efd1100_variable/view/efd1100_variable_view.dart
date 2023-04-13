@@ -317,16 +317,16 @@ class Efd1100VariableView extends StatefulWidget {
     String input =
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
-    String? output;
+    String? output = input.substring(0, 50);
 
-    return output?.length == 50;
+    return output.length == 50;
   }
 
   bool exercise35() {
     String input =
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk memverifikasi apakah kata "Dart" muncul pada input
-    bool? output;
+    bool? output = input.contains("Dart");
 
     return output == true;
   }

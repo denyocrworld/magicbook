@@ -301,7 +301,9 @@ class Efd1300StringView extends StatefulWidget {
   bool exercise34() {
     String input = "€12.345,67";
     // Tuliskan kode untuk mengkonversi input menjadi double
-    double? output;
+    String cleanInput = input.replaceAll(RegExp(r'[^0-9,]'), '');
+    cleanInput = cleanInput.replaceAll(",", ".");
+    double? output = double.parse(cleanInput);
 
     return output == 12345.67;
   }
@@ -309,7 +311,8 @@ class Efd1300StringView extends StatefulWidget {
   bool exercise35() {
     String input = "¥12,345.67";
     // Tuliskan kode untuk mengkonversi input menjadi double
-    double? output;
+    String cleanInput = input.replaceAll(RegExp(r'[^0-9.]'), '');
+    double? output = double.parse(cleanInput);
 
     return output == 12345.67;
   }

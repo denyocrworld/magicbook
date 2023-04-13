@@ -399,7 +399,19 @@ class Efd1600ListAndMapView extends StatefulWidget {
       {'name': 'Jim', 'age': 35, 'salary': 6000},
     ];
     //Tulis kode untuk menentukan karyawan dengan gaji tertinggi dan tampung ke variabel di bawah ini
-    Map<String, dynamic>? highestPaidEmployee;
+    Map<String, Object>? highestPaidEmployee =
+        Map<String, Object>.from(employees.last);
+
+    // Map<String, dynamic> product = {};
+    // addProducts(Map<String, dynamic>.from(product)); // Map<String,dynamic>
+
+    print(employees.last);
+    print({'name': 'Jim', 'age': 35, 'salary': 6000}.runtimeType); //1
+    print(highestPaidEmployee.runtimeType); //2
+
+    print({'name': 'Jim', 'age': 35, 'salary': 6000} == highestPaidEmployee);
+    print("---");
+    // Map<String, Object>
     return highestPaidEmployee == {'name': 'Jim', 'age': 35, 'salary': 6000};
   }
 
@@ -949,6 +961,14 @@ class Efd1600ListAndMapView extends StatefulWidget {
 
     // Tuliskan kode untuk menentukan rata-rata gaji dari semua employee dan tampung ke variable di bawah ini
     double? averageSalary;
+    double totalSalary = 0;
+    for (var employee in employees) {
+      totalSalary += employee["salary"];
+    }
+
+    averageSalary = totalSalary / employees.length;
+    print(totalSalary);
+    print(averageSalary);
 
     return averageSalary == 7750.0;
   }

@@ -305,6 +305,32 @@ class Efb100NullSafetyView extends StatefulWidget {
     print('Total: $total');
   }
 
+  void exercise003() {
+    /*
+    Berapa profit dari Kopi, Teh dan Susu
+    Jawab dgn format ini:
+    Kopi: 300000
+    Teh: 120000
+    Susu: 195000
+    */
+    List<Map<String, dynamic>> barang = [
+      {'nama': 'Kopi', 'hargaJual': 15000, 'hargaBeli': 10000, 'jumlah': 100},
+      {'nama': 'Teh', 'hargaJual': 12000, 'hargaBeli': 9000, 'jumlah': 50},
+      {'nama': 'Susu', 'hargaJual': 25000, 'hargaBeli': 18000, 'jumlah': 25},
+    ];
+
+    // Hitung profit dari masing-masing barang dan total profit
+    int totalProfit = 0;
+    for (var item in barang) {
+      int profit = (item['hargaJual'] - item['hargaBeli']) * item['jumlah'];
+      totalProfit += profit;
+      print('${item['nama']}: $profit');
+    }
+
+    // Menampilkan hasil perhitungan total profit
+    print('Total Profit: $totalProfit');
+  }
+
   Widget build(context, Efb100NullSafetyController controller) {
     controller.view = this;
 
@@ -365,6 +391,7 @@ class Efb100NullSafetyView extends StatefulWidget {
               const Divider(),
               rowAction(exercise001),
               rowAction(exercise002),
+              rowAction(exercise003),
             ],
           ),
         ),

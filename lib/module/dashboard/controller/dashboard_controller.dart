@@ -20,4 +20,14 @@ class DashboardController extends State<DashboardView>
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+
+  String mode = "Basic";
+  updateMode() {
+    if (mode == "Basic") {
+      mode = "UI";
+    } else {
+      mode = "Basic";
+    }
+    setState(() {});
+  }
 }
