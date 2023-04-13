@@ -9,6 +9,8 @@
         "efd1500_if_statement",
         "efd1600_list_and_map",
         "efd1700_regex",
+        "efd1800_async_function",
+        "efd1800_product_detail",
         "efw100_common_widget",
         "efw200_layout",
         "efw300_list",

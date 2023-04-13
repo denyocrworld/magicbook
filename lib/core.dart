@@ -22,6 +22,10 @@ export 'package:magicbook/module/efd1600_list_and_map/controller/efd1600_list_an
 export 'package:magicbook/module/efd1600_list_and_map/view/efd1600_list_and_map_view.dart';
 export 'package:magicbook/module/efd1700_regex/controller/efd1700_regex_controller.dart';
 export 'package:magicbook/module/efd1700_regex/view/efd1700_regex_view.dart';
+export 'package:magicbook/module/efd1800_async_function/controller/efd1800_async_function_controller.dart';
+export 'package:magicbook/module/efd1800_async_function/view/efd1800_async_function_view.dart';
+export 'package:magicbook/module/efd1800_product_detail/controller/efd1800_product_detail_controller.dart';
+export 'package:magicbook/module/efd1800_product_detail/view/efd1800_product_detail_view.dart';
 export 'package:magicbook/module/efw100_common_widget/controller/efw100_common_widget_controller.dart';
 export 'package:magicbook/module/efw100_common_widget/view/efw100_common_widget_view.dart';
 export 'package:magicbook/module/efw200_layout/controller/efw200_layout_controller.dart';

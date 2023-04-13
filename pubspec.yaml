@@ -11,6 +11,11 @@ dependencies:
   material_design_icons_flutter: ^6.0.7096
   intl: ^0.18.0
   carousel_slider: ^4.2.1
+  dio: ^5.1.1
+  permission_handler: ^10.2.0
+  geolocator: ^9.0.2
+  path_provider: ^2.0.14
+  shared_preferences: ^2.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

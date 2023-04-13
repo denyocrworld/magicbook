@@ -53,7 +53,11 @@ class DashboardService {
     {
       "label": "EFB100 - Null Safety",
       "page": const Efb100NullSafetyView(),
-    }
+    },
+    {
+      "label": "Efd1800 - Async Function",
+      "page": const Efd1800AsyncFunctionView(),
+    },
   ];
 
   List uiItems = [
