@@ -344,7 +344,7 @@ class Efd1100VariableView extends StatefulWidget {
     String input =
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk memverifikasi apakah kata "Dart" muncul pada input
-    bool? output;
+    bool? output = input.contains("Dart");
 
     return output == true;
   }

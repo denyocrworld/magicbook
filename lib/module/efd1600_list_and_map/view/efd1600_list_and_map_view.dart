@@ -410,11 +410,23 @@ class Efd1600ListAndMapView extends StatefulWidget {
   bool exercise40() {
     List<Map<String, dynamic>> employees = [
       {'name': 'John', 'age': 30, 'salary': 5000},
-      {'name': 'Jane', 'age': 25, 'salary': 4000},
+      {'name': 'Jane', 'age': 25, 'sa lary': 4000},
       {'name': 'Jim', 'age': 35, 'salary': 6000},
     ];
     //Tulis kode untuk menentukan karyawan dengan gaji tertinggi dan tampung ke variabel di bawah ini
-    Map<String, dynamic>? highestPaidEmployee;
+    Map<String, Object>? highestPaidEmployee =
+        Map<String, Object>.from(employees.last);
+
+    // Map<String, dynamic> product = {};
+    // addProducts(Map<String, dynamic>.from(product)); // Map<String,dynamic>
+
+    print(employees.last);
+    print({'name': 'Jim', 'age': 35, 'salary': 6000}.runtimeType); //1
+    print(highestPaidEmployee.runtimeType); //2
+
+    print({'name': 'Jim', 'age': 35, 'salary': 6000} == highestPaidEmployee);
+    print("---");
+    // Map<String, Object>
     return highestPaidEmployee == {'name': 'Jim', 'age': 35, 'salary': 6000};
   }
 
