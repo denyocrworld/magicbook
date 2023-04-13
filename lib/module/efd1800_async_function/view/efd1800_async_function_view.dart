@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:magicbook/core.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -70,7 +69,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     );
   }
 
-  Future<bool?>? exercise1() async {
+  bool? exercise1() {
     /*
     Ketika di klik,
     Seharusnya dialog ProductDetailView tidak langsung muncul.
@@ -78,7 +77,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Berikan solusi untuk kode dibawah!
     */
     print("A");
-    await Navigator.push(
+    Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Efd1800ProductDetailView()),
     );
@@ -96,7 +95,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Nah, Bagaimana solusinya?
     */
     print("A");
-    var result = await Navigator.push(
+    var result = Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Efd1800ProductDetailView()),
     );
@@ -114,7 +113,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Nah, Bagaimana solusinya?
     */
     print("A");
-    var result = await Navigator.push(
+    var result = Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Efd1800ProductDetailView()),
     );
@@ -132,12 +131,12 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Nah, Bagaimana solusinya?
     */
     print("A");
-    var result = await Navigator.push(
+    var result = Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Efd1800ProductDetailView()),
     );
     print("B");
-    showDialogExample("Value: ${result["product_name"]}");
+    showDialogExample("Value: $result");
     return null;
   }
 
@@ -151,7 +150,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Nah, Bagaimana solusinya?
     */
     print("A");
-    var result = await Navigator.push(
+    var result = Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Efd1800ProductDetailView()),
     );
@@ -168,7 +167,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Perbaiki kode dibawah, agar outputnya adalah true
     */
     print("A");
-    var response = await Dio().get(
+    var response = Dio().get(
       "https://capekngoding.com/demo/api/products",
       options: Options(
         headers: {
@@ -192,7 +191,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     */
     print("A");
     await generateDummy();
-    var response = await Dio().get(
+    var response = Dio().get(
       "https://capekngoding.com/demo/api/products",
       options: Options(
         headers: {
@@ -204,7 +203,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     print("B");
     print(response);
     // TODO: Uncomment kode ini setelah kode di atas diperbaiki!
-    showDialogExample("Value: ${response.data["data"][0]["product_name"]}");
+    // showDialogExample("Value: ${response.data["data"][0]}");
     return null;
   }
 
@@ -217,7 +216,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     */
     print("A");
     await generateDummy();
-    var response = await Dio().get(
+    var response = Dio().get(
       "https://capekngoding.com/demo/api/products",
       options: Options(
         headers: {
@@ -229,7 +228,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     print("B");
     print(response);
     // TODO: Uncomment kode ini setelah kode di atas diperbaiki!
-    showDialogExample("Value: ${response.data["data"][0]["price"]}");
+    // showDialogExample("Value: ${response.data["data"][0]}");
     return null;
   }
 
@@ -243,8 +242,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     */
     print("A");
     bool confirm = false;
-    //dialog
-    await showDialog<void>(
+    showDialog<void>(
       context: context,
       barrierDismissible: true,
       builder: (BuildContext context) {
@@ -298,7 +296,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     */
     print("A");
     String role = "Spacecrew";
-    await showDialog<void>(
+    showDialog<void>(
       context: context,
       barrierDismissible: true,
       builder: (BuildContext context) {
@@ -346,10 +344,10 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     /*
     Uncomment kode ini, dan perbaiki agar tidak error!
     */
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.remove("counter");
-    prefs.setInt('counter', 12);
-    showDialogExample("Value: ${prefs.getInt("counter")}");
+    // final SharedPreferences prefs = SharedPreferences.getInstance();
+    // prefs.remove("counter");
+    // prefs.setInt('counter', 12);
+    // showDialogExample("Value: ${prefs.getInt("counter")}");
     return null;
   }
 
@@ -359,9 +357,9 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
      Jika sudah benar, seharusnya dialog-nya akan muncul!
     */
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.remove("role");
-    await prefs.setString('role', "Admin");
-    await showDialogExample("Value: ${prefs.getString("role")}");
+    prefs.remove("role");
+    prefs.setString('role', "Admin");
+    showDialogExample("Value: ${prefs.getString("role")}");
     Navigator.pop(context);
     return null;
   }
@@ -371,7 +369,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Seharusnya nilai-nya adalah true atau false
     Perbaiki kode ini!
     */
-    var value = await Permission.location.isGranted;
+    var value = Permission.location.isGranted;
     showDialogExample("Value: $value");
     return null;
   }
@@ -382,7 +380,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Dimana n bisa saja nilainya granted atau lainnya!
     Perbaiki kode ini!
     */
-    var value = await Permission.storage.request();
+    var value = Permission.storage.request();
     showDialogExample("Value: $value");
     return null;
   }
@@ -393,17 +391,15 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     Dimana n bisa saja nilainya granted atau lainnya!
     Perbaiki kode ini!
     */
-
-    Position position = await Geolocator.getCurrentPosition();
-    showDialogExample("Value: $position");
+    var value = Permission.audio.request();
+    showDialogExample("Value: $value");
     return null;
   }
 
   Future<bool?> exercise16() async {
     //Perbaikilah agar Value-nya bukan Future!
     File f = File("contoh.txt");
-    // var content = await f.readAsString();
-    var content = f.readAsStringSync();
+    var content = f.readAsString();
     showDialogExample("Value: $content");
     return null;
   }
@@ -414,7 +410,7 @@ class Efd1800AsyncFunctionView extends StatefulWidget {
     //Setelah menunggu 5 detik!
 
     showDialogExample("Tunggu 5 detik!");
-    await Future.delayed(const Duration(seconds: 5));
+    Future.delayed(const Duration(seconds: 5));
     Navigator.pop(context);
     showDialogExample("Selesai!");
     return null;
