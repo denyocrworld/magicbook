@@ -181,5 +181,129 @@ class DashboardService {
       "label": "EList12",
       "page": const Elist12View(),
     },
+    {
+      "label": "ECategory1",
+      "page": const Ecategory1View(),
+    },
+    {
+      "label": "ECategory2",
+      "page": const Ecategory2View(),
+    },
+    {
+      "label": "EDetail1",
+      "page": const Edetail1View(),
+    },
+    {
+      "label": "EDetail2",
+      "page": const Edetail2View(),
+    },
+    {
+      "label": "EDetail3",
+      "page": const Edetail3View(),
+    },
+    {
+      "label": "EDetail4",
+      "page": const Edetail4View(),
+    },
+    {
+      "label": "EDetail5",
+      "page": const Edetail5View(),
+    },
+    {
+      "label": "EDetail6",
+      "page": const Edetail6View(),
+    },
+    {
+      "label": "EDetail7",
+      "page": const Edetail7View(),
+    },
+    {
+      "label": "EDetail8",
+      "page": const Edetail8View(),
+    },
+    {
+      "label": "EDetail9",
+      "page": const Edetail9View(),
+    },
+    {
+      "label": "ECart1",
+      "page": const Ecart1View(),
+    },
+    {
+      "label": "ECart2",
+      "page": const Ecart2View(),
+    },
+    {
+      "label": "ECart3",
+      "page": const Ecart3View(),
+    },
+    {
+      "label": "ECart4",
+      "page": const Ecart4View(),
+    },
+    {
+      "label": "EOrderDetail1",
+      "page": const EorderDetail1View(),
+    },
+    {
+      "label": "EOrderDetail2",
+      "page": const EorderDetail2View(),
+    },
+    {
+      "label": "EProfile1",
+      "page": const Eprofile1View(),
+    },
+    {
+      "label": "EProfile2",
+      "page": const Eprofile2View(),
+    },
+    {
+      "label": "EProfile3",
+      "page": const Eprofile3View(),
+    },
+    {
+      "label": "EProfile4",
+      "page": const Eprofile4View(),
+    },
+    {
+      "label": "EProfile5",
+      "page": const Eprofile5View(),
+    },
+    {
+      "label": "EProfile6",
+      "page": const Eprofile6View(),
+    },
+    {
+      "label": "EProfile7",
+      "page": const Eprofile7View(),
+    },
+    {
+      "label": "EProfile8",
+      "page": const Eprofile8View(),
+    },
+    {
+      "label": "EEditProfile1",
+      "page": const EeditProfile1View(),
+    },
+    {
+      "label": "EEditProfile2",
+      "page": const EeditProfile2View(),
+    },
+    {
+      "label": "EEditProfile3",
+      "page": const EeditProfile3View(),
+    },
+    {
+      "label": "EChat1",
+      "page": const Echat1View(),
+    },
+    {
+      "label": "EChat2",
+      "page": const Echat2View(),
+    },
+    {
+      "label": "ENotification",
+      "page": const Enotification1View(),
+    },
   ];
 }
