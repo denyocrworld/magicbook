@@ -16,8 +16,8 @@ class Efw200LayoutView extends StatefulWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               /*--------
               1. Buatlah sebuah Row dengan 3 buah Container, dimana setiap container memiliki lebar dan tinggi yang sama, dan memiliki warna yang berbeda-beda dengan property sebagai berikut:
               - Container 1:
