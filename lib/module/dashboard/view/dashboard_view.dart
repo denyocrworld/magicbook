@@ -6,6 +6,9 @@ class DashboardView extends StatefulWidget {
 
   Widget build(context, DashboardController controller) {
     controller.view = this;
+    String? name;
+    // int? length = name?.length;
+    print(name?.length); // output: null
 
     return Scaffold(
       appBar: AppBar(
