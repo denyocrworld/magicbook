@@ -7,7 +7,7 @@ Widget rowLabel(Function func) {
   var text = func.toString();
   int startIndex = text.indexOf("'") + 1;
   int endIndex = text.lastIndexOf("'");
-  String functionName = text;
+  String functionName = text.substring(startIndex, endIndex);
   bool isDone = func() ?? false;
 
   return Padding(
@@ -18,7 +18,8 @@ Widget rowLabel(Function func) {
       children: [
         Expanded(
           child: Text(
-            functionName[0].toUpperCase() + functionName.substring(1),
+            // functionName[0].toUpperCase() + functionName.substring(1),
+            functionName,
             style: const TextStyle(
               fontSize: 14.0,
               fontWeight: FontWeight.bold,
