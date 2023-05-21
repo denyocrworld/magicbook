@@ -1,6 +1,7 @@
 {
     "openai_key": "",
     "modules": [
+        "unsupported_platform",
         "dashboard",
         "efd1100_variable",
         "efd1200_datetime",

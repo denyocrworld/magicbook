@@ -156,6 +156,8 @@ export 'package:magicbook/module/ui/esignup1/controller/esignup1_controller.dart
 export 'package:magicbook/module/ui/esignup1/view/esignup1_view.dart';
 export 'package:magicbook/module/ui/esignup2/controller/esignup2_controller.dart';
 export 'package:magicbook/module/ui/esignup2/view/esignup2_view.dart';
+export 'package:magicbook/module/unsupported_platform/controller/unsupported_platform_controller.dart';
+export 'package:magicbook/module/unsupported_platform/view/unsupported_platform_view.dart';
 export 'package:magicbook/service/dummy_service/dummy_service.dart';
 export 'package:magicbook/shared/widget/paging_list/paging_list.dart';
 export 'package:magicbook/shared/widget/row_label/row_label.dart';

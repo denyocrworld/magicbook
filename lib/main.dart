@@ -1,6 +1,8 @@
-import 'package:magicbook/state_util.dart';
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
+import 'package:magicbook/core.dart';
 import 'package:flutter/material.dart';
-import 'module/dashboard/view/dashboard_view.dart';
 
 /*
 MagicBook
@@ -28,7 +30,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const DashboardView(),
+      home: !kIsWeb && Platform.isAndroid
+          ? const DashboardView()
+          : const UnsupportedPlatformView(),
     );
   }
 }
