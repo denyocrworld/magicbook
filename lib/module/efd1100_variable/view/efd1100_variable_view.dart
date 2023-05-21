@@ -80,11 +80,11 @@ class Efd1100VariableView extends StatefulWidget {
   bool? exercise8() {
     //Ini adalah contoh kode untuk mengambil Text diantara ' dan '.
     /*
-          String str = "The text is between 'this'";
-          int startIndex = str.indexOf("'") + 1;
-          int endIndex = str.lastIndexOf("'");
-          String textBetweenQuotes = str.substring(startIndex, endIndex);
-          */
+    String str = "The text is between 'this'";
+    int startIndex = str.indexOf("'") + 1;
+    int endIndex = str.lastIndexOf("'");
+    String textBetweenQuotes = str.substring(startIndex, endIndex);
+    */
 
     String text = "hello 'Deny', apa kabar?";
     String? name;
