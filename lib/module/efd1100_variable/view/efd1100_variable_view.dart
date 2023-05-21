@@ -51,6 +51,21 @@ class Efd1100VariableView extends StatefulWidget {
     return total != null;
   }
 
+  bool? exercise6() {
+    int? age;
+
+    //Uncomment kode dibawah ini!
+    //Kode dibawah akan error jika di jalankan,
+    //Perbaiki dengan meng-gunakan .tryParse("39ads")??0
+    //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
+
+    /*
+    age = int.parse("39ads");
+    */
+
+    return age != null;
+  }
+
   bool? exercise7() {
     int price = 0;
     String value = "5000";
@@ -60,20 +75,6 @@ class Efd1100VariableView extends StatefulWidget {
     value = price;
     */
     return price == 5000;
-  }
-
-  bool? exercise7() {
-    String? name;
-
-    //Uncomment kode dibawah ini!
-    //Kode dibawah akan error jika di jalankan,
-    //Perbaiki dengan meng-gunakan .tryParse("39ads")??0
-    //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
-
-    /*
-          age = int.parse("39ads");
-          */
-    return name != null;
   }
 
   bool? exercise8() {
