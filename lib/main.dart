@@ -1,7 +1,10 @@
 import 'package:magicbook/state_util.dart';
 import 'package:flutter/material.dart';
-
 import 'module/dashboard/view/dashboard_view.dart';
+
+/*
+MagicBook
+*/
 
 void main() {
   runApp(const MyApp());

@@ -7,7 +7,7 @@ Widget rowLabel(Function func) {
   var text = func.toString();
   int startIndex = text.indexOf("'") + 1;
   int endIndex = text.lastIndexOf("'");
-  String functionName = text.substring(startIndex, endIndex);
+  String functionName = text;
   bool isDone = func() ?? false;
 
   return Padding(

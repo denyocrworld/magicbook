@@ -27,7 +27,7 @@ class Efd1100VariableView extends StatefulWidget {
     //Gunakan Regex seperti ini: .replaceAll(RegExp(r'[^\d.]'), '')
 
     String text = "300.24a";
-    price = double.tryParse(text) ?? 0;
+    // price = double.tryParse(text) ?? 0;
     return price == 300.24;
   }
 
@@ -51,19 +51,15 @@ class Efd1100VariableView extends StatefulWidget {
     return total != null;
   }
 
-  bool? exercise6() {
-    int? age;
+  bool? exercise7() {
+    int price = 0;
+    String value = "5000";
 
-    //Uncomment kode dibawah ini!
-    //Kode dibawah akan error jika di jalankan,
-    //Perbaiki dengan meng-gunakan .tryParse("39ads")??0
-    //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
-
+    // Uncomment kode dibawah, dan perbaiki agar tidak error
     /*
-          age = int.parse("39ads");
-          */
-
-    return age != null;
+    value = price;
+    */
+    return price == 5000;
   }
 
   bool? exercise7() {
@@ -314,7 +310,7 @@ class Efd1100VariableView extends StatefulWidget {
     String input =
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
-    String? output = input.substring(0, 50);
+    String? output = input.substring(0, 30);
 
     return output.length == 50;
   }
@@ -330,7 +326,6 @@ class Efd1100VariableView extends StatefulWidget {
 
   Widget build(context, Efd1100VariableController controller) {
     controller.view = this;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("FbkDartVariable"),
