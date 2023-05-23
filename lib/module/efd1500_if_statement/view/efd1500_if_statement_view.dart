@@ -190,9 +190,9 @@ class Efd1500IfStatementView extends StatefulWidget {
   bool exercise22() {
     var numbers = [1, 2, 3, 4, 5];
     // Tuliskan kode untuk menentukan apakah semua angka dalam list numbers adalah bilangan genap
-    bool allEven = false;
+    bool allEven = true;
 
-    return allEven == true;
+    return allEven == false;
   }
 
   bool exercise23() {
