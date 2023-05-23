@@ -3,7 +3,21 @@ import 'util.dart';
 bool? exercise1(int a, int b) {
   // Tulis kode IF statement untuk memeriksa apakah a lebih besar dari b
   // Jika a lebih besar dari b, kembalikan true, jika tidak kembalikan false
-  return null;
+  /*
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
+  */
+
+  /*
+  if (a > b) {
+    return true;
+  }
+  */
+
+  return a > b;
 }
 
 bool testCases() {

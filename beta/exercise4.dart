@@ -4,7 +4,12 @@ bool? exercise4(String s) {
   // Tulis kode IF statement untuk memeriksa apakah string s memiliki lebih dari 5 karakter
   // Jika s memiliki lebih dari 5 karakter, kembalikan true, jika tidak kembalikan false
   // [TIPS] gunakan s.length untuk mendapatkan panjang string
-  return null;
+  // return s.length > 5;
+
+  if (s.length > 5) {
+    return true;
+  }
+  return false;
 }
 
 bool testCases() {

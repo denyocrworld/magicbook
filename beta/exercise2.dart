@@ -3,7 +3,7 @@ import 'util.dart';
 bool? exercise2(int a, int b) {
   // Tulis kode IF statement untuk memeriksa apakah a sama dengan b
   // Jika a sama dengan b, kembalikan true, jika tidak kembalikan false
-  return null;
+  return a == b;
 }
 
 bool testCases() {
