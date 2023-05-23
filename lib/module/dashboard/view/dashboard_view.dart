@@ -52,9 +52,7 @@ class DashboardView extends StatefulWidget {
                   itemBuilder: (BuildContext context, int index) {
                     var item = controller.dashboardService.menuItems[index];
 
-                    bool isGenap = index % 2 == 0;
                     return Card(
-                      color: isGenap ? Colors.red[100] : Colors.grey[400],
                       clipBehavior: Clip.antiAlias,
                       child: ListTile(
                         onTap: () {

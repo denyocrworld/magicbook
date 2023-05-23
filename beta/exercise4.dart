@@ -6,7 +6,7 @@ bool? exercise4(String s) {
   // [TIPS] gunakan s.length untuk mendapatkan panjang string
   // return s.length > 5;
 
-  if (s.length > 5) {
+  if (s.length >= 5) {
     return true;
   }
   return false;
