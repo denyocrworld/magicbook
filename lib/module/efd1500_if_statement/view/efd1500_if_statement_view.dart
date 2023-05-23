@@ -175,8 +175,7 @@ class Efd1500IfStatementView extends StatefulWidget {
   bool exercise20() {
     var date = DateTime(2022, 1, 1);
     // Tuliskan kode untuk menentukan apakah date adalah hari Senin
-    bool isMonday = false;
-
+    bool isMonday = true;
     return isMonday == false;
   }
 
