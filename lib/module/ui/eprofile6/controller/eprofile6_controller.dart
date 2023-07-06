@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:magicbook/state_util.dart';
 import '../view/eprofile6_view.dart';
 
-class Eprofile6Controller extends State<Eprofile6View> implements MvcController {
+class Eprofile6Controller extends State<Eprofile6View>
+    implements MvcController {
   static late Eprofile6Controller instance;
   late Eprofile6View view;
 

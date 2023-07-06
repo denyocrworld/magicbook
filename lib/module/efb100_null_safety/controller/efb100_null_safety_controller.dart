@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:magicbook/state_util.dart';
 import '../view/efb100_null_safety_view.dart';
 
-class Efb100NullSafetyController extends State<Efb100NullSafetyView> implements MvcController {
+class Efb100NullSafetyController extends State<Efb100NullSafetyView>
+    implements MvcController {
   static late Efb100NullSafetyController instance;
   late Efb100NullSafetyView view;
 

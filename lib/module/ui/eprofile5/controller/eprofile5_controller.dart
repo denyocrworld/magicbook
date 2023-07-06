@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:magicbook/state_util.dart';
 import '../view/eprofile5_view.dart';
 
-class Eprofile5Controller extends State<Eprofile5View> implements MvcController {
+class Eprofile5Controller extends State<Eprofile5View>
+    implements MvcController {
   static late Eprofile5Controller instance;
   late Eprofile5View view;
 

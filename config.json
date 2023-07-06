@@ -1,5 +1,4 @@
 {
-    "openai_key": "",
     "modules": [
         "unsupported_platform",
         "dashboard",
@@ -78,5 +77,8 @@
         "ui/echat1",
         "ui/echat2",
         "ui/enotification1"
-    ]
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "unfreezed": true
 }

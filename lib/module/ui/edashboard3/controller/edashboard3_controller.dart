@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:magicbook/state_util.dart';
 import '../view/edashboard3_view.dart';
 
-class Edashboard3Controller extends State<Edashboard3View> implements MvcController {
+class Edashboard3Controller extends State<Edashboard3View>
+    implements MvcController {
   static late Edashboard3Controller instance;
   late Edashboard3View view;
 
